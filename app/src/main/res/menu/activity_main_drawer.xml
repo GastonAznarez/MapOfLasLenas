@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/map">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_P" android:icon="@mipmap/ic_tracks"
+                    android:title="@string/nav_pistas" />
+                <item android:id="@+id/nav_M" android:icon="@mipmap/ic_medios"
+                    android:title="@string/nav_medios" />
+                <item android:id="@+id/nav_L" android:icon="@mipmap/ic_map_ts"
+                    android:title="@string/nav_lugares" />
+                <item android:id="@+id/nav_PM" android:icon="@mipmap/ic_nav_pym"
+                    android:title="@string/nav_pistYlug" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/tools">
+        <menu>
+            <group>
+
+                <item android:id="@+id/nav_estado" android:title="@string/nav_estado"
+                        android:icon="@mipmap/ic_nav_estado"/>
+
+                <item android:id="@+id/nav_pronostico" android:title="@string/nav_pronos"
+                    android:icon="@drawable/nav_pronostico"/>
+
+                <item android:id="@+id/nav_emergencias" android:icon="@mipmap/ic_nav_emer"
+                    android:title="@string/nav_emer"/>
+
+                <item android:id="@+id/nav_help" android:title="@string/nav_ayuda"
+                    android:icon="@android:drawable/ic_menu_help"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/nav_grup1" >
+        <menu>
+            <item android:id="@+id/nav_compartir" android:title="@string/nav_compartir"
+                android:icon="@mipmap/ic_share" />
+            <item android:id="@+id/nav_horarios" android:title="@string/nav_horarios"
+                android:icon="@mipmap/ic_nav_horarios"/>
+            <item android:id="@+id/nav_settings"
+                android:title="@string/about"/>
+        </menu>
+    </item>
+
+</menu>

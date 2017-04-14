@@ -1,0 +1,119 @@
+<resources>
+
+    <string name="app_name">Map of Las Lenas</string>
+    <string name="horarios_name">Schedules</string>
+    <string name="estados_name">Montain Conditions</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="nav_medios">Lifting means</string>
+    <string name="nav_lugares">Places</string>
+    <string name="nav_pistas">Tracks</string>
+    <string name="nav_pistYlug">Tracks and Lift means</string>
+    <string name="nav_grup1" translatable="false">Extras</string>
+    <string name="nav_estado">Montain Conditions</string>
+    <string name="nav_emer">Emergencies</string>
+    <string name="nav_locate">Locate Las Lenas</string>
+    <string name="nav_ayuda">Help</string>
+    <string name="nav_compartir">Share us</string>
+    <string name="nav_horarios">Schedules</string>
+    <string name="nav_help">Help</string>
+    <string name="nav_pronos">Weather</string>
+
+    <string name="about">About us</string>
+    <string name="about1">Coordinator and developer: Gastón Anzarez</string>
+    <string name="about2" translatable="false">mdlaslenas@gmail.com</string>
+
+    <string name="header1">Map Of Las Lenas</string>
+    <string name="header2" translatable="false">Gastón Aznarez</string>
+
+    <string name="snackbar1">Turn On the GPS on max accuracy mode</string>
+    <string name="snackbar2">Check Internet connection</string>
+
+    <string name="dialog_positive">OK</string>
+    <string name="dialog_sppiner">Please wait…</string>
+    <string name="dialog_info">The data are obtained from the official website of Las Lenas.</string>
+
+    <string name="compartir_mensaje">Install our amazing app from Las Lenas https://play.google.com/store/apps/details?id=com.app.mapll.mapoflaslenas</string>
+
+    <string name="green_track">Easy</string>
+    <string name="blue_track">Intermediate</string>
+    <string name="red_track">Difficult</string>
+    <string name="black_track">Very difficult</string>
+
+    <string name="blue_m">Ts: Chairlift</string>
+    <string name="black_m">Tk: Ski Lift</string>
+    <string name="green_m">New Chairlift Minerva II</string>
+
+    <string name="hotel_mapa">Hotel</string>
+    <string name="ufo_mapa" translatable="false">UFO Point</string>
+    <string name="locales_mapa">businesses</string>
+    <string name="restoran_mapa">Restaurant</string>
+    <string name="medico_mapa">Medic</string>
+    <string name="baño_mapa">Toilet</string>
+    <string name="herramientas_mapa">Maintenance</string>
+    <string name="mall_mapa">Shop</string>
+    <string name="car_mapa">Parking</string>
+    <string name="info_mapa">Information</string>
+    <string name="bar_map">Bar</string>
+
+    <string name="tab_estado1">Slopes</string>
+    <string name="tab_estado2">Off-piste</string>
+    <string name="tab_estado3">Lifting means</string>
+
+    <string name="supermercado">Super Marcket</string>
+    <string name="kiosco">kiosk</string>
+    <string name="baño">Bath</string>
+    <string name="domo">Dome</string>
+    <string name="ingreso">Income/Report Center</string>
+    <string name="autoE">Car Parking</string>
+    <string name="coleE">Collective Parking</string>
+    <string name="CentroM">Medical Center</string>
+    <string name="cafe">Coffee</string>
+    <string name="servPista">Track Service</string>
+
+    <string name="pista">Track</string>
+    <string name="estado">Status</string>
+    <string name="tiponieve">Snow</string>
+    <string name="apertura">Open</string>
+    <string name="cierre">Close</string>
+    <string name="condicion">Condition</string>
+    <string name="observaciones">Observations</string>
+    <string name="fueradepista">Off-piste</string>
+    <string name="estado0">Close</string>
+    <string name="estado1">Open</string>
+    <string name="riesgo">Avalanche risk</string>
+    <string name="medios">Means</string>
+    <string name="buttonS">send suggestions</string>
+    <string name="sugerencia">Hello , my suggestion is …</string>
+    <string name="sugerenciaSolo">Suggestion</string>
+    <string name="map">Map</string>
+    <string name="tools">Tools</string>
+
+    <string name="toatB">Press back again to leave</string>
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-9503849625074367/4129297731</string>
+    <string name="Observaciones">Observations</string>
+
+    <string name="location_placeholder">Finding location</string>
+    <string name="weather.search_city">Search city</string>
+    <string name="weather.refresh">Refresh</string>
+
+
+    <string name="lunes">Monday</string>
+    <string name="martes">Tuesday</string>
+    <string name="miercoles">Wednesday</string>
+    <string name="jueves">Thursday</string>
+    <string name="viernes">Friday</string>
+    <string name="sabado">Saturday</string>
+    <string name="domingo">Sunday</string>
+
+    <string name="grafico">GRAPH</string>
+    <string name="dia">Day</string>
+    <string name="hoy">TODAY</string>
+    <string name="forecast">FORECAST</string>
+
+</resources>

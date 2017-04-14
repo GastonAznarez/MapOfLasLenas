@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:title="About">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.app.mapll.mapoflaslenas"
+            android:targetClass="com.app.mapll.mapoflaslenas.AboutActivity"/>
+    </PreferenceScreen>
+
+</PreferenceScreen>

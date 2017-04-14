@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:padding="5dp"
+    android:background="#eeeeee">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#eeeeee"
+            android:id="@+id/linerL">
+
+            <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal"
+        cardview:theme="@style/CardView.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textToday"
+                android:text="@string/hoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout4"
+                android:layout_below="@+id/textToday"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignBottom="@+id/textTemp"
+                    android:layout_alignLeft="@+id/linearLayout3"
+                    android:layout_alignStart="@+id/linearLayout3"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="0°"
+                        android:id="@+id/textTmax"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="40dp"
+                        android:layout_gravity="center"
+                        android:background="#000000"
+                        android:id="@+id/view"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="0°"
+                        android:id="@+id/textTmin"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="0°"
+                    android:id="@+id/textTemp"
+                    android:textSize="70dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageWeather"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="60"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout3"
+                android:layout_marginBottom="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/humidity" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hum"
+                        android:id="@+id/textHum"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/visibility" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="visibility"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/textVis"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="12dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/wind" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="wind"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/textWind"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        cardview:theme="@style/CardView.Light"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/day1" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="15"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    custom:weatherIconResource="@string/wi_showers"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/img1" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/max1"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:id="@+id/min1" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/day2" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="15"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    custom:weatherIconResource="@string/wi_showers"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/img2" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/max2"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:id="@+id/min2" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/day3" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="15"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    custom:weatherIconResource="@string/wi_showers"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/img3" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/max3"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:id="@+id/min3" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/day4" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="15"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    custom:weatherIconResource="@string/wi_showers"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/img4" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/max4"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:id="@+id/min4" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/day5" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="15"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    custom:weatherIconResource="@string/wi_showers"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/img5" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/max5"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:id="@+id/min5" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/day6" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="15"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    custom:weatherIconResource="@string/wi_showers"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/img6" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/max6"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:id="@+id/min6" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/day7" />
+
+                <com.github.pwittchen.weathericonview.WeatherIconView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    custom:weatherIconColor="@android:color/black"
+                    custom:weatherIconSize="15"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    custom:weatherIconResource="@string/wi_showers"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/img7" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/max7"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="0°"
+                    android:textSize="17dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:id="@+id/min7" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               cardview:theme="@style/CardView.Light"
+               android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:text="@string/grafico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|top"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#000000" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="15dp"/>
+
+                </LinearLayout>
+
+           </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
